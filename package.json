@@ -1,0 +1,28 @@
+{
+  "name": "react-dir-config-script",
+  "version": "1.0.0",
+  "description": "This script installs and configures standard build tools in current directory for a React project",
+  "main": "cli.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonamzah/react-dir-config-script.git"
+  },
+  "author": "Sonam Zahrt-Tenzin",
+  "license": "ISC",
+  "bin": {
+    "react-strt": "./cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/sonamzah/react-dir-config-script/issues"
+  },
+  "homepage": "https://github.com/sonamzah/react-dir-config-script#readme",
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
+}
