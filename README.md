@@ -15,31 +15,36 @@ NOTE -- I have left several dev comments and todo's in the code.
 -----------------------
 
 INSTALLATION: 
-        npm i react-strt
-or      npm install react-strt
+
+npm i react-strt
+
+or
+
+npm install react-strt
 
 -----------------------
 
 USAGE: 
 (see numbered list below for details on what its doing)
-        react-strt         
-        react-strt -a
-        react-strt -A
-        -------------
-        react-strt *  
-        (* means any other argument -- Installs only dependencies, no dev dependencies)
+
+react-strt         
+react-strt -a
+react-strt -A
+
+react-strt *  
+(* means any other argument -- Installs only dependencies, no dev dependencies)
+
 NOTE -- if you do not run: 'npm init' before running 'react-strt' this script will run 'npm init -y'
-    ******
-    ******
-    OPTIONS:
-        For now the only supported option is:
-        -a/-A
-        which stands for ALL -- installing EVERY tool listed above 
-        supplying NO argument options will default to -a (ALL)
-        *
-        ** My option parsing game in this script is pretty weak. For future updates I may employ a package called 'minimist' (https://www.npmjs.com/package/minimist) which is a really cool project that has pretty nice option arguments parsing features.
-        *
-        ** For what I wanted to get done (which was automating tools installation and config) adding advanced options processing was looking like it was going to take more time than I would have liked so I short-circuited much of the options logic for now! (it might look a little weird -- if you glance at the code, but Im leaving it for preservation of train of thought for when I pick it up again!)
+
+OPTIONS:
+For now the only supported option is:
+-a/-A
+which stands for ALL -- installing EVERY tool listed above 
+supplying NO argument options will default to -a (ALL)
+
+** My option parsing game in this script is pretty weak. For future updates I may employ a package called 'minimist' (https://www.npmjs.com/package/minimist) which is a really cool project that has pretty nice option arguments parsing features.
+
+** For what I wanted to get done (which was automating tools installation and config) adding advanced options processing was looking like it was going to take more time than I would have liked so I short-circuited much of the options logic for now! (it might look a little weird -- if you glance at the code, but Im leaving it for preservation of train of thought for when I pick it up again!)
 
 Currently this script will:
 1. Run: 'npm init -y' 
