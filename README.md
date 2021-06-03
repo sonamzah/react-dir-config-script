@@ -53,81 +53,82 @@ Currently this script will:
    ** Warning: Only run this script in the root directory of your project **
 
 2. Install all of the following as dev dependencies: 
-    "prettier",
-    "eslint",
-    "eslint-config-prettier",
-    "parcel",
-    "@babel/eslint-parser",
-    "eslint-plugin-import",
-    "eslint-plugin-jsx-a11y",
-    "eslint-plugin-react",
-    "eslint-plugin-react-hooks",
+"prettier",
+"eslint",
+"eslint-config-prettier",
+"parcel",
+"@babel/eslint-parser",
+"eslint-plugin-import",
+"eslint-plugin-jsx-a11y",
+"eslint-plugin-react",
+"eslint-plugin-react-hooks",
 
-    using 'npm i -D _____'
+using 'npm i -D _____'
 
 3. Create the followng simple config files in current directory (should be Root of your project):
     
     .prettierrc: {}
 
     .eslintrc.json: 
-    {
-        "extends": [
-            "eslint:recommended",
-            "plugin:import/errors",
-            "plugin:react/recommended",
-            "plugin:jsx-a11y/recommended",
-            "prettier"
-        ],
-        "rules": {
-            "react/prop-types": 0,
-            "no-console": 1,
-            "react-hooks/rules-of-hooks": 2,
-            "react-hooks/exhaustive-deps": 1
-        },
-        "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
-        "parserOptions": {
-            "ecmaVersion": 2018,
-            "sourceType": "module",
-            "ecmaFeatures": {
-            "jsx": true
-            }
-        },
-        "env": {
-            "es6": true,
-            "browser": true,
-            "node": true
-        },
-        "settings": {
-            "react": {
-            "version": "detect"
-                }
-            }
+{
+"extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+],
+"rules": {
+    "react/prop-types": 0,
+    "no-console": 1,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1
+},
+"plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+"parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    "jsx": true
     }
+},
+"env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+},
+"settings": {
+    "react": {
+    "version": "detect"
+        }
+    }
+}
 
-    .gitignore: 
-        node_modules/
-        .DS_Store
-        .cache/
-        dist/
-        coverage/
-        .vscode/
-        .env/
+.gitignore: 
+node_modules/
+.DS_Store
+.cache/
+dist/
+coverage/
+.vscode/
+.env/
 
 4. Adds the following 'npm scripts' to package.json for manual execution of the tools
 
     "scripts" : 
-    {
-        "dev": "parcel src/index.html",
-        "dev:mock": "cross-env PET_MOCK=mock npm run dev",
-        "format": "prettier \"./**/*.{js,html,json}\" --write",
-        "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
+{
+"dev": "parcel src/index.html",
+"dev:mock": "cross-env PET_MOCK=mock npm run dev",
+"format": "prettier \"./**/*.{js,html,json}\" --write",
+"lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+"test": "echo \"Error: no test specified\" && exit 1"
+},
 
-    - Run any of the above with:
-    'npm run ____'
-    ex. 
-        npm run dev
+- Run any of the above with:
+'npm run ____'
+
+ex. 
+npm run dev
 
 *** NOTE -- "test" is the default script that is created when package.json is created... I just left it there
 
