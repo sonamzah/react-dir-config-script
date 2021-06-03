@@ -69,58 +69,60 @@ Currently this script will:
     
     .prettierrc: {}
 
-    .eslintrc.json: {
-                    "extends": [
-                        "eslint:recommended",
-                        "plugin:import/errors",
-                        "plugin:react/recommended",
-                        "plugin:jsx-a11y/recommended",
-                        "prettier"
-                    ],
-                    "rules": {
-                        "react/prop-types": 0,
-                        "no-console": 1,
-                        "react-hooks/rules-of-hooks": 2,
-                        "react-hooks/exhaustive-deps": 1
-                    },
-                    "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
-                    "parserOptions": {
-                        "ecmaVersion": 2018,
-                        "sourceType": "module",
-                        "ecmaFeatures": {
-                        "jsx": true
-                        }
-                    },
-                    "env": {
-                        "es6": true,
-                        "browser": true,
-                        "node": true
-                    },
-                    "settings": {
-                        "react": {
-                        "version": "detect"
-                         }
-                        }
-                    }
+    .eslintrc.json: 
+    {
+        "extends": [
+            "eslint:recommended",
+            "plugin:import/errors",
+            "plugin:react/recommended",
+            "plugin:jsx-a11y/recommended",
+            "prettier"
+        ],
+        "rules": {
+            "react/prop-types": 0,
+            "no-console": 1,
+            "react-hooks/rules-of-hooks": 2,
+            "react-hooks/exhaustive-deps": 1
+        },
+        "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+        "parserOptions": {
+            "ecmaVersion": 2018,
+            "sourceType": "module",
+            "ecmaFeatures": {
+            "jsx": true
+            }
+        },
+        "env": {
+            "es6": true,
+            "browser": true,
+            "node": true
+        },
+        "settings": {
+            "react": {
+            "version": "detect"
+                }
+            }
+    }
 
     .gitignore: 
-                node_modules/
-                .DS_Store
-                .cache/
-                dist/
-                coverage/
-                .vscode/
-                .env/
+        node_modules/
+        .DS_Store
+        .cache/
+        dist/
+        coverage/
+        .vscode/
+        .env/
 
 4. Adds the following 'npm scripts' to package.json for manual execution of the tools
 
-    "scripts" : {
-            "dev": "parcel src/index.html",
-            "dev:mock": "cross-env PET_MOCK=mock npm run dev",
-            "format": "prettier \"./**/*.{js,html,json}\" --write",
-            "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-            "test": "echo \"Error: no test specified\" && exit 1"
-        },
+    "scripts" : 
+    {
+        "dev": "parcel src/index.html",
+        "dev:mock": "cross-env PET_MOCK=mock npm run dev",
+        "format": "prettier \"./**/*.{js,html,json}\" --write",
+        "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
 
     - Run any of the above with:
     'npm run ____'
