@@ -16,11 +16,11 @@ NOTE -- I have left several dev comments and todo's in the code.
 
 INSTALLATION: 
 
-npm i react-strt
+npm i react-dir-config-script
 
 or
 
-npm install react-strt
+npm install react-dir-config-script
 
 -----------------------
 
