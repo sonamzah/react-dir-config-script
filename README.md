@@ -104,7 +104,7 @@ using 'npm i -D _____'
     }
 }
 
-.gitignore: 
+    .gitignore: 
 node_modules/
 .DS_Store
 .cache/
