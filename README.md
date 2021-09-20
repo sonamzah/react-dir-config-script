@@ -11,6 +11,7 @@ NOTE -- I have left several dev comments and todo's in the code.
 
 -------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------
+DEMO VIDEO: https://www.loom.com/share/058c8d529c8a464e83f89d5e621a1820  (my computer was super slow and overloaded when i filmed this so x2 is your friend)
 -----------------------
 -----------------------
 
